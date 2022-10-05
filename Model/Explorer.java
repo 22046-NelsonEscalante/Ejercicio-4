@@ -6,7 +6,7 @@ public class Explorer extends Character{
 
 
     public Explorer(int maxHP, int currentHP, int ATK, String entryQuote, String winQuote, String loseQuote, Item[] inventory) {
-        super(maxHP, currentHP, ATK, entryQuote, winQuote, loseQuote);
+        super(maxHP, currentHP, ATK, entryQuote, winQuote, loseQuote, inventory);
         setInventory(inventory);
     }
 

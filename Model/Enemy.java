@@ -7,8 +7,8 @@ public class Enemy extends Character{
     private String ability;
 
 
-    public Enemy(int maxHP, int currentHP, int ATK, String entryQuote, String winQuote, String loseQuote, String name, String description, String ability) {
-        super(maxHP, currentHP, ATK, entryQuote, winQuote, loseQuote);
+    public Enemy(int maxHP, int currentHP, int ATK, String entryQuote, String winQuote, String loseQuote, String name, String description, String ability, Item[] inventory) {
+        super(maxHP, currentHP, ATK, entryQuote, winQuote, loseQuote, inventory);
         setName(name);
         setDescription(description);
         setAbility(ability);

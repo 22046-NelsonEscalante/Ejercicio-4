@@ -22,7 +22,7 @@ public class Battle {
         int roll = d20();
         switch (attacker.getAbility()) {
             case "Fotosíntesis":
-                double healCalc = attacker.getCurrentHP()*0.5*(roll/20);
+                double healCalc = attacker.getMaxHP()*0.5*(roll/20);
                 int heal = (int)healCalc;
                 attacker.setCurrentHP(attacker.getCurrentHP() + heal);
                 return "La " + attacker.getName() + " absorbe luz solar y se cura " + heal + "PS!";

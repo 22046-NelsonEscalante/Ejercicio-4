@@ -8,9 +8,10 @@ public class Character {
     private String entryQuote;    
     private String winQuote;    
     private String loseQuote;
+    private Item[] inventory;
 
 
-    public Character(int maxHP, int currentHP, int ATK, String entryQuote, String winQuote, String loseQuote) {
+    public Character(int maxHP, int currentHP, int ATK, String entryQuote, String winQuote, String loseQuote, Item[] inventory) {
         setMaxHP(maxHP);
         setCurrentHP(currentHP);
         setATK(ATK);
@@ -55,5 +56,11 @@ public class Character {
     }
     public void setLoseQuote(String loseQuote) {
         this.loseQuote = loseQuote;
+    }
+    public Item[] getInventory() {
+        return inventory;
+    }
+    public void setInventory(Item[] inventory) {
+        this.inventory = inventory;
     }
 }

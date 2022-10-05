@@ -6,7 +6,7 @@ public class Warrior extends Character{
 
 
     public Warrior(int maxHP, int currentHP, int ATK, String entryQuote, String winQuote, String loseQuote, Item[] inventory) {
-        super(maxHP, currentHP, ATK, entryQuote, winQuote, loseQuote);
+        super(maxHP, currentHP, ATK, entryQuote, winQuote, loseQuote, inventory);
         setInventory(inventory);
     }
 
